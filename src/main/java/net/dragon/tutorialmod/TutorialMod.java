@@ -1,5 +1,6 @@
 package net.dragon.tutorialmod;
 
+import net.dragon.tutorialmod.item.ModItem;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,5 +11,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItem.registerModItems();
 	}
 }
